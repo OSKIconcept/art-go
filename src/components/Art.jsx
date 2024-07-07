@@ -88,7 +88,7 @@ const Art = () => {
       {data.map((art, i) => (
         <div className="flex-1 basis-1/3 flex flex-col gap-6" key={i}>
           <img className="w-[98%]" src={art.image} />
-          <div className="flex gap-12 justify-start items-center">
+          <div className="flex px-5 justify-between items-center">
             <div className="flex gap-1.2 justify-center items-center">
               <p className="font-bold">{art.name}</p>
               <PiLineVertical className="text-[42px]" />
