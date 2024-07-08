@@ -12,18 +12,18 @@ import { BiSolidRightArrow } from "react-icons/bi";
 const Category = () => {
   return (
     <>
-      <div className="flex  mx-auto max-w-[1728px] px-[88px]  pb-16 text-[31px] -tracking-tight">
+      <div className="flex  mx-auto max-w-[1728px] px-[20px]  pb-16 text-[31px] -tracking-tight">
         <div className="flex flex-col   pb-10   ">
           <div className="border-r">
-            <p className="pr-5 pt-16 font-bold pb-10">Category</p>
-            <div className="flex gap-2 border justify-center items-center p-3 mr-7 mb-14  ">
+            <h2 className="pr-5 pt-16 font-bold pb-10 font-clash">Category</h2>
+            <div className="flex gap-2 border justify-center items-center md:p-3 p-2 mr-7 mb-14  ">
               <p>illustrations</p>
 
               <IoMdArrowDropdown />
             </div>
 
             <div className="flex justify-between items-center border-b pr-7 border-r">
-              <p className="pl-5 font-bold pt-2 ">Subject</p>
+              <h3 className="pl-5 font-bold pt-2 font-clash ">Subject</h3>
               <FaMinus />
             </div>
           </div>
@@ -61,44 +61,44 @@ const Category = () => {
             <p className="text-[28px] text-[#16151566]">Show more</p>
           </div>
 
-          <div className="flex flex-col gap-6 border-r pt-16">
+          <div className="flex flex-col gap-6 border-r pt-16 font-clash">
             <div className="flex justify-between items-center border-b pb-3 pr-1">
-              <p className="pl-4">Style</p>
+              <h3 className="pl-4">Style</h3>
               <FaPlus className="" />
             </div>
 
             <div className="flex justify-between items-center border-b pb-3 pr-1">
-              <p className="pl-4">Price</p>
+              <h3 className="pl-4">Price</h3>
               <FaPlus className="" />
             </div>
 
             <div className="flex justify-between items-center border-b pb-3 pr-1">
-              <p className="pl-4">Material</p>
+              <h3 className="pl-4">Material</h3>
               <FaPlus className="" />
             </div>
 
             <div className="flex justify-between items-center border-b pb-3 pr-1">
-              <p className="pl-4">Medium</p>
+              <h3 className="pl-4">Medium</h3>
               <FaPlus className="" />
             </div>
 
             <div className="flex justify-between items-center border-b pb-3 pr-1">
-              <p className="pl-4">Color</p>
+              <h3 className="pl-4">Color</h3>
               <FaPlus className="" />
             </div>
 
             <div className="flex justify-between items-center border-b pb-3 pr-1">
-              <p className="pl-4">Size</p>
+              <h3 className="pl-4">Size</h3>
               <FaPlus className="" />
             </div>
 
             <div className="flex justify-between items-center border-b pb-3 pr-1">
-              <p className="pl-4">Year</p>
+              <h3 className="pl-4">Year</h3>
               <FaPlus className="" />
             </div>
 
             <div className="flex justify-between items-center border-b pb-3 pr-1">
-              <p className="pl-4">Collection</p>
+              <h3 className="pl-4">Collection</h3>
               <FaPlus className="" />
             </div>
           </div>
@@ -109,13 +109,18 @@ const Category = () => {
           <div className="flex justify-between items-center w-[90%]">
             <div className="flex gap-5 text-[#16151566] items-center justify-center">
               <p>Shop</p>
-              <MdOutlineDoubleArrow />
+              <p>
+                {" "}
+                <MdOutlineDoubleArrow />
+              </p>
               <p>Digital Art</p>
             </div>
-            <div className="flex gap-2 border justify-center items-center p-3 ">
+            <div className="flex gap-2 border justify-center items-center md:p-3 p-2 ">
               <p>sort</p>
 
-              <IoMdArrowDropdown />
+              <p>
+                <IoMdArrowDropdown />
+              </p>
             </div>
           </div>
 
@@ -124,19 +129,19 @@ const Category = () => {
           <div className="flex gap-12 justify-center items-center py-12">
             <div className="flex gap-5 justify-center items-center">
               <div className="px-6 py-2 border rounded-md text-black border-black">
-                1
+                <p>1</p>
               </div>
               <div className="px-6 py-2 border rounded-md text-[#16151566]">
-                2
+                <p>2</p>
               </div>
               <div className="px-6 py-2 border rounded-md text-[#16151566]">
-                3
+                <p>3</p>
               </div>
               <div className="px-6 py-2 border rounded-md text-[#16151566]">
-                4
+                <p>4</p>
               </div>
               <div className="px-6 py-2 border rounded-md text-[#16151566]">
-                5
+                <p>5</p>
               </div>
             </div>
 

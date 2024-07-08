@@ -6,7 +6,7 @@ const RootLayout = () => {
   return (
     <div className="-tracking-tighter">
       <Header />
-      <main>
+      <main className="">
         <Outlet />
       </main>
       <Footer />

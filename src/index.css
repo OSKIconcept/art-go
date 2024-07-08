@@ -8,5 +8,32 @@
 }
 
 body {
+  font-family: campton;
+}
+
+@font-face {
+  font-family: campton;
+  src: url(./fonts/CamptonBook.otf);
+}
+
+.font-clash {
   font-family: clash;
+}
+
+@layer base {
+  p {
+    @apply text-[8px] md:text-[16px] lg:text-[32px];
+  }
+
+  h1 {
+    @apply text-[16px] md:text-[38px] lg:text-[72px];
+  }
+
+  h2 {
+    @apply text-[12px] md:text-[28px] lg:text-[40px];
+  }
+
+  h3 {
+    @apply text-[12px] md:text-[24px] lg:text-[32px];
+  }
 }

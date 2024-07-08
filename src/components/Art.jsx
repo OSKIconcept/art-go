@@ -90,9 +90,9 @@ const Art = () => {
           <img className="w-[98%]" src={art.image} />
           <div className="flex px-5 justify-between items-center">
             <div className="flex gap-1.2 justify-center items-center">
-              <p className="font-bold">{art.name}</p>
+              <h3 className="font-bold">{art.name}</h3>
               <PiLineVertical className="text-[42px]" />
-              {art.amount}
+              <h3> {art.amount}</h3>
             </div>
             <div className="flex gap-6">
               <img className="w-[35px]" src={art.like} />{" "}

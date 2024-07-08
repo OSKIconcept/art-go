@@ -11,13 +11,14 @@ import { BiSolidRightArrow } from "react-icons/bi";
 import { IoMdArrowDropdown } from "react-icons/io";
 import { MdCancel } from "react-icons/md";
 import { PiLineVertical } from "react-icons/pi";
+import { Link } from "react-router-dom";
 
 <BiSolidRightArrow />;
 
 const Carts = () => {
   return (
-    <div>
-      <div className="flex justify-start gap-8 pb-[100px] border-b border-[#16151566]">
+    <div className="mx-auto flex-col justify-center items-center min-w-[1728px] ">
+      <div className="flex justify-start gap-8 pb-[100px] border-b border-[#16151566] px-[88px]">
         <IoIosCheckbox className="text-[39px]" />
         <img src={people} />
         <div className="flex gap-4 justify-start items-start">
@@ -63,7 +64,7 @@ const Carts = () => {
         </div>
       </div>
 
-      <div className="flex justify-start gap-8 pt-[100px] pb-[100px] ">
+      <div className="px-[88px] flex justify-start gap-8 pt-[100px] pb-[100px] ">
         <IoIosCheckbox className="text-[39px]" />
         <img src={sun} />
         <div className="flex gap-4 justify-start items-start">
@@ -115,7 +116,7 @@ const Carts = () => {
         </div>
 
         <div className="text-[40px] text-white text-center font-bold px-[55px] py-4 bg-black ">
-          Proceed to checkout (2)
+          <Link to="/checkout"> Proceed to checkout (2)</Link>
         </div>
       </div>
       <p className="text-[#289F51] text-2xl font-bold ">
