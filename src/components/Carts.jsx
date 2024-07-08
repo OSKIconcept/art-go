@@ -17,7 +17,7 @@ import { FaAngleDoubleLeft } from "react-icons/fa";
 const Carts = () => {
   return (
     <div className="mx-auto flex-col justify-center items-center md:pt-[80px] pt-[28px] max-w-[1511px] px-[20px]  ">
-      <div className="text-[#161515A3] flex gap-[8px] md:gap-[16px] items-center md:pb-8 pb-4 justify-start ">
+      <div className="text-[#161515A3] flex gap-[4px] md:gap-[16px] items-center md:pb-8 pb-4 justify-start ">
         <h3>
           <FaAngleDoubleLeft className="text-bold" />
         </h3>
@@ -26,18 +26,18 @@ const Carts = () => {
         </Link>
       </div>
 
-      <div className="flex justify-start md:gap-8 gap-2.5 md:pb-[100px] pb-[32px] border-b border-[#16151566] ">
+      <div className="flex justify-start md:gap-8 gap-2 md:pb-[100px] pb-[32px] border-b border-[#16151566] ">
         <h3>
           <IoIosCheckbox className="" />
         </h3>
         <img
-          className="md:w-[440px] lg:w-[540px] w-[200px] h-[200px] md:h-[440px] lg:h-[540px] object-contain "
+          className="md:w-[440px] lg:w-[540px] w-[170px] h-[170px] md:h-[440px] lg:h-[540px] object-contain "
           src={people}
         />
-        <div className="flex md:gap-4 gap-2.5 justify-start items-start">
-          <div className="md:pl-8 pl-4">
+        <div className="flex md:gap-4 gap-0.5 justify-start items-start">
+          <div className="md:pl-8 pl-3">
             <h3 className="font-bold font-clash">Silence</h3>
-            <div className=" flex flex-col md:gap-3 gap-1.5 justify-start">
+            <div className=" flex flex-col md:gap-2  justify-start">
               <p className="font-bold">
                 Type:{" "}
                 <span className="font-normal md:ml-2 ml-0.5">Digital art</span>
@@ -62,7 +62,7 @@ const Carts = () => {
 
               <div className="flex gap-3 justify-start items-center text-2xl">
                 <p>Quantity:</p>
-                <div className="flex md:gap-[120px] gap-[60px] border justify-center items-center md:px-5 px-2 md:py-2 py-0.5 md:ml-3 ml-1.5  ">
+                <div className="flex md:gap-[120px] gap-[30px] border justify-center items-center md:px-5 px-2 md:py-2 py-[1px] md:ml-3 ml-1.5  ">
                   <p>1</p>
 
                   <p>
@@ -84,18 +84,18 @@ const Carts = () => {
         </div>
       </div>
 
-      <div className="flex justify- md:gap-8 gap-2.5 md:pb-[100px] pb-[32px]   pt-[32px] md:pt-[100px]">
+      <div className="flex justify- md:gap-8 gap-2 md:pb-[100px] pb-[32px]   pt-[32px] md:pt-[100px]">
         <h3>
           <IoIosCheckbox className="" />
         </h3>
         <img
-          className="md:w-[440px] lg:w-[540px] w-[200px] h-[200px] md:h-[440px] lg:h-[540px] object-contain "
+          className="md:w-[440px] lg:w-[540px] w-[170px] h-[170px] md:h-[440px] lg:h-[540px] object-contain "
           src={sun}
         />
-        <div className="flex md:gap-4 gap-2.5 justify-start items-start">
-          <div className="md:pl-8 pl-4">
-            <h3 className="font-bold font-clash">Silence</h3>
-            <div className=" flex flex-col md:gap-3 gap-1.5 justify-start">
+        <div className="flex md:gap-4 gap-0.5 justify-start items-start">
+          <div className="md:pl-8 pl-3">
+            <h3 className="font-bold font-clash">Ethereal</h3>
+            <div className=" flex flex-col md:gap-2 justify-start">
               <p className="font-bold">
                 Type: <span className="font-normal ml-2">Digital art</span>
               </p>
@@ -117,7 +117,7 @@ const Carts = () => {
 
               <div className="flex gap-3 justify-start items-center text-2xl">
                 <p>Quantity:</p>
-                <div className="flex md:gap-[120px] gap-[60px] border justify-center items-center md:px-5 px-2 md:py-2 py-0.5 md:ml-3 ml-1.5  ">
+                <div className="flex md:gap-[120px] gap-[30px] border justify-center items-center md:px-5 px-2 md:py-2 py-[1px] md:ml-3 ml-1.5  ">
                   <p>1</p>
 
                   <p>
@@ -139,7 +139,7 @@ const Carts = () => {
         </div>
       </div>
 
-      <div className="flex items-center justify-start md:pb-10 pb-5">
+      <div className="flex items-center justify-start md:pb-10 pb-3.5">
         <div className="text-[40px] text-black text-center font-bold md:px-[55px] px-[20px] md:py-4 py-1.5 border-[#161515A3] border ">
           <h3 className="font-clash">Total: $ 6000</h3>
         </div>
@@ -154,7 +154,7 @@ const Carts = () => {
         Delivery fee included
       </p>
 
-      <div className="flex items-center justify-start gap-1 md:pt-[60px] pt-[2px] md:pb-[90px] pb-[45px]  border-b border-[#16151566]">
+      <div className="flex items-center justify-start gap-1 md:pt-[60px] pt-[8px] md:pb-[90px] pb-[35px]  border-b border-[#16151566]">
         <h3>
           {" "}
           <IoIosCheckbox className="text" />

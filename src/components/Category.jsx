@@ -8,6 +8,7 @@ import { IoIosCheckbox } from "react-icons/io";
 import { MdCheckBoxOutlineBlank } from "react-icons/md";
 import { MdOutlineDoubleArrow } from "react-icons/md";
 import { BiSolidRightArrow } from "react-icons/bi";
+import { Link } from "react-router-dom";
 
 const Category = () => {
   return (
@@ -164,7 +165,9 @@ const Category = () => {
             </div>
 
             <h2>
-              <BiSolidRightArrow />
+              <Link to="/cart">
+                <BiSolidRightArrow />
+              </Link>
             </h2>
           </div>
 
