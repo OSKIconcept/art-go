@@ -12,19 +12,32 @@ import { IoMdArrowDropdown } from "react-icons/io";
 import { MdCancel } from "react-icons/md";
 import { PiLineVertical } from "react-icons/pi";
 import { Link } from "react-router-dom";
-
-<BiSolidRightArrow />;
+import { FaAngleDoubleLeft } from "react-icons/fa";
 
 const Carts = () => {
   return (
-    <div className="mx-auto flex-col justify-center items-center min-w-[1728px] ">
-      <div className="flex justify-start gap-8 pb-[100px] border-b border-[#16151566] px-[88px]">
-        <IoIosCheckbox className="text-[39px]" />
-        <img src={people} />
-        <div className="flex gap-4 justify-start items-start">
-          <div className="pl-8">
-            <h3 className="text-[40px]">Silence</h3>
-            <div className="text-2xl flex flex-col gap-3 justify-start">
+    <div className="mx-auto flex-col justify-center items-center md:pt-[80px] pt-[28px] max-w-[1511px] px-[20px]  ">
+      <div className="text-[#161515A3] flex gap-[8px] md:gap-[16px] items-center md:pb-8 pb-4 justify-start ">
+        <h3>
+          <FaAngleDoubleLeft className="text-bold" />
+        </h3>
+        <Link to="/">
+          <h3 className="font-bold">Back to shop</h3>
+        </Link>
+      </div>
+
+      <div className="flex justify-start md:gap-8 gap-4 md:pb-[100px] pb-[32px] border-b border-[#16151566] ">
+        <h3>
+          <IoIosCheckbox className="" />
+        </h3>
+        <img
+          className="md:w-[440px] lg:w-[540px] w-[230px] h-[230px] md:h-[440px] lg:h-[540px] object-contain "
+          src={people}
+        />
+        <div className="flex md:gap-4 gap-2.5 justify-start items-start">
+          <div className="md:pl-8 pl-4">
+            <h3 className="font-bold font-clash">Silence</h3>
+            <div className=" flex flex-col md:gap-3 gap-1.5 justify-start">
               <p className="font-bold">
                 Type: <span className="font-normal ml-2">Digital art</span>
               </p>
@@ -46,31 +59,40 @@ const Carts = () => {
 
               <div className="flex gap-3 justify-start items-center text-2xl">
                 <p>Quantity:</p>
-                <div className="flex gap-[120px] border justify-center items-center px-5 py-2 ml-3  ">
+                <div className="flex md:gap-[120px] gap-[60px] border justify-center items-center md:px-5 px-3 md:py-2 py-1 md:ml-3 ml-1.5  ">
                   <p>1</p>
 
-                  <IoMdArrowDropdown />
+                  <p>
+                    <IoMdArrowDropdown />
+                  </p>
                 </div>
               </div>
             </div>
 
-            <p className="text-[16px] text-[#289F51] pt-4">
+            <p className="lg:text-[16px] md:text-[10px] text-[4px] text-[#289F51] pt-4">
               Guaranteed arrival on 14th July if you order today
             </p>
 
-            <h2 className="font-bold text-[32px] pt-3 ">$3000</h2>
+            <h3 className="font-bold  pt-3 ">$3000</h3>
           </div>
-          <MdCancel className="text-[39px]" />
+          <p>
+            <MdCancel className="" />
+          </p>
         </div>
       </div>
 
-      <div className="px-[88px] flex justify-start gap-8 pt-[100px] pb-[100px] ">
-        <IoIosCheckbox className="text-[39px]" />
-        <img src={sun} />
-        <div className="flex gap-4 justify-start items-start">
-          <div className="pl-8">
-            <h3 className="text-[40px]">Silence</h3>
-            <div className="text-2xl flex flex-col gap-3 justify-start">
+      <div className="flex justify- md:gap-8 gap-4 md:pb-[100px] pb-[32px]   pt-[32px] md:pt-[100px]">
+        <h3>
+          <IoIosCheckbox className="" />
+        </h3>
+        <img
+          className="md:w-[440px] lg:w-[540px] w-[230px] h-[230px] md:h-[440px] lg:h-[540px] object-contain "
+          src={sun}
+        />
+        <div className="flex md:gap-4 gap-2.5 justify-start items-start">
+          <div className="md:pl-8 pl-4">
+            <h3 className="font-bold font-clash">Silence</h3>
+            <div className=" flex flex-col md:gap-3 gap-1.5 justify-start">
               <p className="font-bold">
                 Type: <span className="font-normal ml-2">Digital art</span>
               </p>
@@ -92,73 +114,112 @@ const Carts = () => {
 
               <div className="flex gap-3 justify-start items-center text-2xl">
                 <p>Quantity:</p>
-                <div className="flex gap-[120px] border justify-center items-center px-5 py-2 ml-3  ">
+                <div className="flex md:gap-[120px] gap-[60px] border justify-center items-center md:px-5 px-3 md:py-2 py-1 md:ml-3 ml-1.5  ">
                   <p>1</p>
 
-                  <IoMdArrowDropdown />
+                  <p>
+                    <IoMdArrowDropdown />
+                  </p>
                 </div>
               </div>
             </div>
 
-            <p className="text-[16px] text-[#289F51] pt-4">
+            <p className="lg:text-[16px] md:text-[10px] text-[4px] text-[#289F51] pt-4">
               Guaranteed arrival on 14th July if you order today
             </p>
 
-            <h2 className="font-bold text-[32px] pt-3 ">$3000</h2>
+            <h3 className="font-bold  pt-3 ">$3000</h3>
           </div>
-          <MdCancel className="text-[39px]" />
+          <p>
+            <MdCancel className="" />
+          </p>
         </div>
       </div>
 
-      <div className="flex items-center justify-start pb-10">
-        <div className="text-[40px] text-black text-center font-bold px-[55px] py-4 border border-[#161515A3] ">
-          Total: $ 6000
+      <div className="flex items-center justify-start md:pb-10 pb-5">
+        <div className="text-[40px] text-black text-center font-bold md:px-[55px] px-[20px] md:py-4 py-1.5 border-[#161515A3] border ">
+          <h3 className="font-clash">Total: $ 6000</h3>
         </div>
 
-        <div className="text-[40px] text-white text-center font-bold px-[55px] py-4 bg-black ">
-          <Link to="/checkout"> Proceed to checkout (2)</Link>
+        <div className="text-[40px] text-white text-center font-bold md:px-[55px] px-[20px] md:py-4 py-1.5 bg-black ">
+          <h3 className="font-clash">
+            <Link to="/checkout"> Proceed to checkout (2)</Link>
+          </h3>
         </div>
       </div>
-      <p className="text-[#289F51] text-2xl font-bold ">
+      <p className="text-[#289F51] font-bold font-clash ">
         Delivery fee included
       </p>
 
-      <div className="flex items-center justify-start gap-1 pt-[60px] pb-[90px]  border-b border-[#16151566]">
-        <IoIosCheckbox className="text-[39px]" />
-        <p className="text-[32px]">Select all</p>
+      <div className="flex items-center justify-start gap-1 md:pt-[60px] pt-[2px] md:pb-[90px] pb-[45px]  border-b border-[#16151566]">
+        <h3>
+          {" "}
+          <IoIosCheckbox className="text" />
+        </h3>
+        <p className="lg:text-[32px] text-[12px] md:text-[24px]">Select all</p>
       </div>
 
-      <div className="py-[80px] gap-[50px] flex flex-col ">
-        <p className="text-[40px] font-bold">More from Digital Art</p>
-        <div className="flex items-center justify-start gap-6">
-          <div className=" flex flex-col gap-6">
-            <img className="w-[98%]" src={bottle} />
-            <div className="flex gap-[100px] justify-center items-center">
+      <div className="md:py-[60px] py-[30px] md:gap-[30px] gap-[10px] flex flex-col ">
+        <h3 className=" font-bold font-clash">More from Digital Art</h3>
+        <div className="flex items-center justify-start md:gap-2 gap-1">
+          <div className=" flex flex-col md:gap-6 gap-3">
+            <img className="w-[88%]" src={bottle} />
+            <div className="flex md:gap-[100px] gap-[40px] justify-start items-center md:pl-6 pl-3">
               <div className="flex gap-1.2 justify-center items-center">
-                <p className="font-bold text-[32px]">Magic</p>
-                <PiLineVertical className="text-[42px]" />
-                <p className="text-[32px]">$3000</p>
+                <p className="font-bold lg:text-[32px] md:text-[24px] text-[8px]">
+                  Magic
+                </p>
+                <h3>
+                  {" "}
+                  <PiLineVertical className="" />
+                </h3>
+                <p className="lg:text-[32px] text-[8px] md:text-[24px]">
+                  $3000
+                </p>
               </div>
-              <div className="flex gap-6">
-                <img className="w-[35px]" src={heartt} />
-                <img className="w-[35px]" src={cartt} />
+              <div className="flex md:gap-5 gap-2.5">
+                <img
+                  className="lg:w-[32px] w-[12px] md:w-[24px] lg:h-[32px] h-[12px] md:h-[24px] "
+                  src={heartt}
+                />
+                <img
+                  className="lg:w-[32px] w-[12px] md:w-[24px] lg:h-[32px] h-[12px] md:h-[24px]"
+                  src={cartt}
+                />
               </div>
             </div>
           </div>
-
-          <div className=" flex flex-col gap-6">
-            <img className="w-[98%]" src={butterfly} />
-            <div className="flex gap-[100px] justify-center items-center">
+          <div className=" flex flex-col md:gap-6 gap-3">
+            <img className="w-[88%]" src={butterfly} />
+            <div className="flex md:gap-[100px] gap-[40px] justify-start items-center md:pl-6 pl-3">
               <div className="flex gap-1.2 justify-center items-center">
-                <p className="font-bold text-[32px]">Magic</p>
-                <PiLineVertical className="text-[42px]" />
-                <p className="text-[32px]">$3000</p>
+                <p className="font-bold lg:text-[32px] md:text-[24px] text-[8px]">
+                  Magic
+                </p>
+                <h3>
+                  {" "}
+                  <PiLineVertical className="" />
+                </h3>
+                <p className="lg:text-[32px] text-[8px] md:text-[24px]">
+                  $3000
+                </p>
               </div>
-              <div className="flex gap-6">
-                <img className="w-[35px]" src={heartt} />
-                <img className="w-[35px]" src={cartt} />
+              <div className="flex md:gap-5 gap-2.5">
+                <img
+                  className="lg:w-[32px] w-[12px] md:w-[24px] lg:h-[32px] h-[12px] md:h-[24px] "
+                  src={heartt}
+                />
+                <img
+                  className="lg:w-[32px] w-[12px] md:w-[24px] lg:h-[32px] h-[12px] md:h-[24px]"
+                  src={cartt}
+                />
               </div>
             </div>
+          </div>
+          <div className="md:pl-3 pl-1">
+            <Link to="/">
+              <BiSolidRightArrow className="md:w-[41.67px] md:h-[83.33px] w-[12.33px] h-[20.67px] " />
+            </Link>
           </div>
         </div>
       </div>

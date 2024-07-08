@@ -22,7 +22,7 @@ body {
 
 @layer base {
   p {
-    @apply text-[8px] md:text-[16px] lg:text-[32px];
+    @apply text-[8px] md:text-[16px] lg:text-[24px];
   }
 
   h1 {
@@ -30,10 +30,10 @@ body {
   }
 
   h2 {
-    @apply text-[12px] md:text-[28px] lg:text-[40px];
+    @apply text-[12px] md:text-[28px] lg:text-[48px];
   }
 
   h3 {
-    @apply text-[12px] md:text-[24px] lg:text-[32px];
+    @apply text-[12px] md:text-[24px] lg:text-[40px];
   }
 }

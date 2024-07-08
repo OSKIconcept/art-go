@@ -88,15 +88,15 @@ const Art = () => {
       {data.map((art, i) => (
         <div className="flex-1 basis-1/3 flex flex-col gap-6" key={i}>
           <img className="w-[98%]" src={art.image} />
-          <div className="flex px-5 justify-between items-center">
-            <div className="flex gap-1.2 justify-center items-center">
+          <div className="flex  justify-around items-center px-4">
+            <div className="flex justify-center items-center">
               <h3 className="font-bold">{art.name}</h3>
-              <PiLineVertical className="text-[42px]" />
-              <h3> {art.amount}</h3>
+              <PiLineVertical className="md:text-[30px] text-[15px]" />
+              <h3 className="pl-[-10px]"> {art.amount}</h3>
             </div>
-            <div className="flex gap-6">
-              <img className="w-[35px]" src={art.like} />{" "}
-              <img className="w-[35px]" src={art.chart} />
+            <div className="flex md:gap-3 gap-2 ">
+              <img className="md:w-[24px]  w-[12px] " src={art.like} />{" "}
+              <img className="md:w-[24px] w-[12px] " src={art.chart} />
             </div>
           </div>
         </div>

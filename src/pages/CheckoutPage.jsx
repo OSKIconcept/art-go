@@ -1,6 +1,7 @@
 //icon
 import { MdOutlineDoubleArrow } from "react-icons/md";
 import { IoMdArrowDropdown } from "react-icons/io";
+import { Link } from "react-router-dom";
 
 const CheckoutPage = () => {
   return (
@@ -9,11 +10,15 @@ const CheckoutPage = () => {
         <div className="flex justify-center items-center max-w-[1511px] lg:gap-[150px] gap-[50px] md:gap-[80px]  mx-auto ">
           <h3 className=" text-white ">Checkout</h3>
           <div className=" gap-[12px] text-[#FFFFFFA3] flex justify-center items-center ">
-            <p>Back to shop</p>
+            <Link to="/">
+              <p>Back to shop</p>
+            </Link>
             <p>
               <MdOutlineDoubleArrow />
             </p>
-            <p>Back to cart</p>
+            <Link to="/cart">
+              <p>Back to cart</p>
+            </Link>
             <p>
               <MdOutlineDoubleArrow />
             </p>
