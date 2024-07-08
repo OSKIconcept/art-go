@@ -7,33 +7,41 @@ const CheckoutPage = () => {
   return (
     <div className="mx-auto justify-center items-center  ">
       <div className="bg-[#716A63] px-[20px] py-[11px] md:py-[19px] w-full ">
-        <div className="flex justify-center items-center max-w-[1511px] lg:gap-[150px] gap-[50px] md:gap-[80px]  mx-auto ">
+        <div className="flex justify-center items-center max-w-[1511px] lg:gap-[150px] gap-[18px] md:gap-[80px]  mx-auto ">
           <h3 className=" text-white ">Checkout</h3>
-          <div className=" gap-[12px] text-[#FFFFFFA3] flex justify-center items-center ">
+          <div className=" md:gap-[12px] gap-[3px] text-[#FFFFFFA3] flex justify-center items-center ">
             <Link to="/">
-              <p>Back to shop</p>
+              <p className="text-[7px] sm:text-[8px] md:text-[24px]">
+                Back to shop
+              </p>
             </Link>
-            <p>
+            <p className="text-[7px] sm:text-[8px] md:text-[24px]">
               <MdOutlineDoubleArrow />
             </p>
             <Link to="/cart">
-              <p>Back to cart</p>
+              <p className="text-[7px] sm:text-[8px] md:text-[24px]">
+                Back to cart
+              </p>
             </Link>
             <p>
               <MdOutlineDoubleArrow />
             </p>
-            <p className="text-white">Payment</p>
+            <p className="text-white text-[7px] sm:text-[8px] md:text-[24px]">
+              Payment
+            </p>
             <p>
               <MdOutlineDoubleArrow className="text-white" />
             </p>
-            <p>Confimation</p>
+            <p className="text-[7px] sm:text-[8px] md:text-[24px]">
+              Confimation
+            </p>
           </div>
         </div>
       </div>
 
       <div className="mx-auto max-w-[1511px] px-[20px]">
         <div className=" pb-3 pt-8 ">
-          <div className="flex gap-[250px] items-center justify-start pb-6">
+          <div className="flex md:gap-[250px] gap-[100px] items-center justify-start pb-6">
             <h3 className="text-[12px] md:text-[20px] lg:text-[40px]  font-bold font-clash ">
               Shipping details
             </h3>
@@ -44,7 +52,7 @@ const CheckoutPage = () => {
             </div>
           </div>
 
-          <div className="flex justify-start gap-6 border-b border-[#16151566]">
+          <div className="flex justify-start md:gap-6 gap-3 border-b border-[#16151566]">
             <div className="font-bold">
               <p>Paul Atreides</p>
               <p>15 New World Estate</p>
@@ -57,7 +65,7 @@ const CheckoutPage = () => {
 
         <div className="">
           <div className="pb-12">
-            <div className="flex gap-[200px] items-center justify-start pb-6">
+            <div className="flex md:gap-[200px] gap-[100px] items-center justify-start pb-6">
               <h3 className="font-clash text-[12px] md:text-[20px] lg:text-[40px]  font-bold ">
                 Your order (2 items)
               </h3>

@@ -26,12 +26,12 @@ const Carts = () => {
         </Link>
       </div>
 
-      <div className="flex justify-start md:gap-8 gap-4 md:pb-[100px] pb-[32px] border-b border-[#16151566] ">
+      <div className="flex justify-start md:gap-8 gap-2.5 md:pb-[100px] pb-[32px] border-b border-[#16151566] ">
         <h3>
           <IoIosCheckbox className="" />
         </h3>
         <img
-          className="md:w-[440px] lg:w-[540px] w-[230px] h-[230px] md:h-[440px] lg:h-[540px] object-contain "
+          className="md:w-[440px] lg:w-[540px] w-[200px] h-[200px] md:h-[440px] lg:h-[540px] object-contain "
           src={people}
         />
         <div className="flex md:gap-4 gap-2.5 justify-start items-start">
@@ -39,27 +39,30 @@ const Carts = () => {
             <h3 className="font-bold font-clash">Silence</h3>
             <div className=" flex flex-col md:gap-3 gap-1.5 justify-start">
               <p className="font-bold">
-                Type: <span className="font-normal ml-2">Digital art</span>
+                Type:{" "}
+                <span className="font-normal md:ml-2 ml-0.5">Digital art</span>
               </p>
 
               <p className="font-bold">
-                Category: <span className="font-normal ml-2">People</span>
+                Category:{" "}
+                <span className="font-normal md:ml-2 ml-0.5">People</span>
               </p>
 
               <p className="font-bold">
                 Dimensions:{" "}
-                <span className="font-normal ml-2">
+                <span className="font-normal md:ml-2 ml-0.5">
                   172.7 W x 172.7 H x 0.3 D cm
                 </span>
               </p>
 
               <p className="font-bold">
-                Year of creation: <span className="font-normal ml-2">2016</span>
+                Year of creation:{" "}
+                <span className="font-normal md:ml-2 ml-0.5">2016</span>
               </p>
 
               <div className="flex gap-3 justify-start items-center text-2xl">
                 <p>Quantity:</p>
-                <div className="flex md:gap-[120px] gap-[60px] border justify-center items-center md:px-5 px-3 md:py-2 py-1 md:ml-3 ml-1.5  ">
+                <div className="flex md:gap-[120px] gap-[60px] border justify-center items-center md:px-5 px-2 md:py-2 py-0.5 md:ml-3 ml-1.5  ">
                   <p>1</p>
 
                   <p>
@@ -69,11 +72,11 @@ const Carts = () => {
               </div>
             </div>
 
-            <p className="lg:text-[16px] md:text-[10px] text-[4px] text-[#289F51] pt-4">
+            <p className="lg:text-[16px] md:text-[10px] text-[4px] text-[#289F51] md:pt-4 pt-2">
               Guaranteed arrival on 14th July if you order today
             </p>
 
-            <h3 className="font-bold  pt-3 ">$3000</h3>
+            <h3 className="font-bold  md:pt-3 pt-0.5 ">$3000</h3>
           </div>
           <p>
             <MdCancel className="" />
@@ -81,12 +84,12 @@ const Carts = () => {
         </div>
       </div>
 
-      <div className="flex justify- md:gap-8 gap-4 md:pb-[100px] pb-[32px]   pt-[32px] md:pt-[100px]">
+      <div className="flex justify- md:gap-8 gap-2.5 md:pb-[100px] pb-[32px]   pt-[32px] md:pt-[100px]">
         <h3>
           <IoIosCheckbox className="" />
         </h3>
         <img
-          className="md:w-[440px] lg:w-[540px] w-[230px] h-[230px] md:h-[440px] lg:h-[540px] object-contain "
+          className="md:w-[440px] lg:w-[540px] w-[200px] h-[200px] md:h-[440px] lg:h-[540px] object-contain "
           src={sun}
         />
         <div className="flex md:gap-4 gap-2.5 justify-start items-start">
@@ -114,7 +117,7 @@ const Carts = () => {
 
               <div className="flex gap-3 justify-start items-center text-2xl">
                 <p>Quantity:</p>
-                <div className="flex md:gap-[120px] gap-[60px] border justify-center items-center md:px-5 px-3 md:py-2 py-1 md:ml-3 ml-1.5  ">
+                <div className="flex md:gap-[120px] gap-[60px] border justify-center items-center md:px-5 px-2 md:py-2 py-0.5 md:ml-3 ml-1.5  ">
                   <p>1</p>
 
                   <p>
@@ -124,11 +127,11 @@ const Carts = () => {
               </div>
             </div>
 
-            <p className="lg:text-[16px] md:text-[10px] text-[4px] text-[#289F51] pt-4">
+            <p className="lg:text-[16px] md:text-[10px] text-[4px] text-[#289F51] md:pt-4 pt-2">
               Guaranteed arrival on 14th July if you order today
             </p>
 
-            <h3 className="font-bold  pt-3 ">$3000</h3>
+            <h3 className="font-bold  md:pt-3 pt-0.5 ">$3000</h3>
           </div>
           <p>
             <MdCancel className="" />
@@ -141,7 +144,7 @@ const Carts = () => {
           <h3 className="font-clash">Total: $ 6000</h3>
         </div>
 
-        <div className="text-[40px] text-white text-center font-bold md:px-[55px] px-[20px] md:py-4 py-1.5 bg-black ">
+        <div className="text-[40px] text-white text-center font-bold md:px-[56px] px-[21px] md:py-[17px] py-[7px] bg-black ">
           <h3 className="font-clash">
             <Link to="/checkout"> Proceed to checkout (2)</Link>
           </h3>

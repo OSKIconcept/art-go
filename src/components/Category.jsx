@@ -145,7 +145,7 @@ const Category = () => {
           <Art />
 
           <div className="flex md:gap-12 gap-8 justify-center items-center md:py-12 py-6">
-            <div className="flex gap-5 justify-center items-center">
+            <div className="flex md:gap-5 gap-2 justify-center items-center">
               <div className="md:px-6 px-4 py-1 md:py-2 border rounded-md text-black border-black">
                 <p>1</p>
               </div>
@@ -168,11 +168,15 @@ const Category = () => {
             </h2>
           </div>
 
-          <p className="text-center">
-            Need help? Contact our{" "}
-            <span className="font-bold">Art consultant</span> and we can help
-            you choose the best style to represent your vision, brand, or story.{" "}
-          </p>
+          <div className="">
+            {" "}
+            <p className="text-center min-w-[20%]">
+              Need help? Contact our{" "}
+              <span className="font-bold">Art consultant</span> and we can help
+              you choose the best style to represent your vision, brand, or
+              story.{" "}
+            </p>
+          </div>
         </div>
       </div>
     </>

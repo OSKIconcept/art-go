@@ -22,18 +22,18 @@ body {
 
 @layer base {
   p {
-    @apply text-[8px] md:text-[16px] lg:text-[24px];
+    @apply text-[10px] sm:text-[12px] md:text-[16px] lg:text-[24px];
   }
 
   h1 {
-    @apply text-[16px] md:text-[38px] lg:text-[72px];
+    @apply text-[18px] sm:text-[22px] md:text-[38px] lg:text-[72px];
   }
 
   h2 {
-    @apply text-[12px] md:text-[28px] lg:text-[48px];
+    @apply text-[14px] sm:text-[16px] md:text-[28px] lg:text-[48px];
   }
 
   h3 {
-    @apply text-[12px] md:text-[24px] lg:text-[40px];
+    @apply text-[13px] sm:text-[15px] md:text-[24px] lg:text-[40px];
   }
 }
