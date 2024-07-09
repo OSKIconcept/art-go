@@ -167,26 +167,26 @@ const Carts = () => {
         <div className="flex items-center justify-start md:gap-2 gap-1">
           <div className=" flex flex-col md:gap-6 gap-3">
             <img className="w-[88%]" src={bottle} />
-            <div className="flex md:gap-[30px] gap-[40px] justify-start items-center ">
+            <div className="flex md:gap-[30px] gap-[40px] justify-start items-center overflow-x-hidden  ">
               <div className="flex gap-1.2 justify-center items-center">
-                <p className="font-bold lg:text-[32px] md:text-[24px] sm:text-[14px] text-[8px]">
+                <p className="font-bold lg:text-[32px] md:text-[18px] sm:text-[14px] text-[8px]">
                   Magic
                 </p>
                 <h3>
                   {" "}
                   <PiLineVertical className="" />
                 </h3>
-                <p className="lg:text-[32px] text-[8px] md:text-[24px] sm:text-[14px]">
+                <p className="lg:text-[32px] text-[8px] md:text-[18px] sm:text-[14px]">
                   $3000
                 </p>
               </div>
               <div className="flex md:gap-5 gap-2.5">
                 <img
-                  className="lg:w-[32px] w-[12px] md:w-[24px] lg:h-[32px] h-[12px] md:h-[24px] "
+                  className="lg:w-[32px] w-[12px] md:w-[20px] lg:h-[32px] h-[12px] md:h-[20px] "
                   src={heartt}
                 />
                 <img
-                  className="lg:w-[32px] w-[12px] md:w-[24px] lg:h-[32px] h-[12px] md:h-[24px]"
+                  className="lg:w-[32px] w-[12px] md:w-[20px] lg:h-[32px] h-[12px] md:h-[20px]"
                   src={cartt}
                 />
               </div>
@@ -196,24 +196,24 @@ const Carts = () => {
             <img className="w-[88%]" src={butterfly} />
             <div className="flex md:gap-[30px] gap-[40px] justify-start items-center">
               <div className="flex gap-1.2 justify-center items-center">
-                <p className="font-bold lg:text-[32px] md:text-[24px] text-[8px] sm:text-[14px]">
+                <p className="font-bold lg:text-[32px] md:text-[18px] text-[8px] sm:text-[14px]">
                   Magic
                 </p>
                 <h3>
                   {" "}
                   <PiLineVertical className="" />
                 </h3>
-                <p className="lg:text-[32px] text-[8px] md:text-[24px] sm:text-[14px]">
+                <p className="lg:text-[32px] text-[8px] md:text-[18px] sm:text-[14px]">
                   $3000
                 </p>
               </div>
               <div className="flex md:gap-5 gap-2.5">
                 <img
-                  className="lg:w-[32px] w-[12px] md:w-[24px] lg:h-[32px] h-[12px] md:h-[24px] "
+                  className="lg:w-[32px] w-[12px] md:w-[20px] lg:h-[32px] h-[12px] md:h-[20px] "
                   src={heartt}
                 />
                 <img
-                  className="lg:w-[32px] w-[12px] md:w-[24px] lg:h-[32px] h-[12px] md:h-[24px]"
+                  className="lg:w-[32px] w-[12px] md:w-[20px] lg:h-[32px] h-[12px] md:h-[20px]"
                   src={cartt}
                 />
               </div>
