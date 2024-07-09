@@ -185,7 +185,7 @@ const CheckoutPage = () => {
       </div>
 
       <div className="items-center justify-center flex font-clash md:pb-12 pb-6">
-        <div className="text-white md:px-8 px-4 md:py-3 py-1.5 bg-black">
+        <div className="text-white md:px-12 px-6 md:py-3 py-1.5 bg-black">
           <Link to="*">
             <h3 className="font-clash font-bold">Pay $6000</h3>
           </Link>
