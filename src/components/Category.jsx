@@ -181,7 +181,7 @@ const Category = () => {
             </p>
           </div>
 
-          <div className="text-[40px] text-white text-center font-bold md:px-[56px] px-[21px] md:py-[17px] py-[7px] bg-black hover:bg-gray-800 ">
+          <div className="text-[40px] text-white text-center font-bold md:px-8 px-4 md:py-3 py-1.5 bg-black hover:bg-gray-800 ">
             <h3 className="font-clash">
               <Link to="/cart">Go to cart</Link>
             </h3>

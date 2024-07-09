@@ -91,9 +91,9 @@ const CheckoutPage = () => {
               </div>
             </div>
 
-            <div className="flex gap-3 justify-start items-center text-2xl pt-2">
+            <div className="flex gap-3 justify-start items-center text-2xl md:pt-2 pt-1">
               <p>Quantity:</p>
-              <div className="flex gap-[18px] border justify-center items-center md:px-5 px-3 md:py-2 py-0.5 ml-3  ">
+              <div className="flex gap-[18px] border justify-center items-center md:px-5 px-3 md:py-2 py-0.5 md:ml-3 ml-1.5  ">
                 <p>1</p>
 
                 <IoMdArrowDropdown className="text-[16px] md:text-2xl" />
@@ -128,9 +128,9 @@ const CheckoutPage = () => {
               </div>
             </div>
 
-            <div className="flex gap-3 justify-start items-center text-2xl pt-2">
+            <div className="flex gap-3 justify-start items-center text-2xl md:pt-2 pt-1">
               <p>Quantity:</p>
-              <div className="flex gap-[18px] border justify-center items-center md:px-5 px-3 md:py-2 py-0.5 ml-3  ">
+              <div className="flex gap-[18px] border justify-center items-center md:px-5 px-3 md:py-2 py-0.5 md:ml-3 ml-1.5  ">
                 <p>1</p>
 
                 <IoMdArrowDropdown className="text-[16px] md:text-2xl" />
@@ -143,35 +143,35 @@ const CheckoutPage = () => {
             <h3 className="font-bold font-campton py-2 border-b">$3000</h3>
           </div>
 
-          <div className="py-8">
+          <div className="md:py-8 py-4">
             <h2 className="font-bold pb-3 md:pb-4 font-clash">
               Payment details
             </h2>
-            <div className="pb-2 md:pb-4">
-              <h3 className="pb-2">Card name</h3>
-              <div className="font-bold py-3 px-6 border border-[#16151533]  w-[60%] text-left mb-4">
+            <div className="pb-1 md:pb-3">
+              <h3 className="md:pb-2 pb-1">Card name</h3>
+              <div className="font-bold md:py-3 py-2.5 md:px-6 px-3 border border-[#16151533]  w-[60%] text-left mb-4">
                 <h3>Paul Atreids</h3>
               </div>
             </div>
 
             <div>
-              <h3 className="pb-2">Card number</h3>
-              <div className="font-bold py-3 px-6 border border-[#16151533] w-[60%] text-left ">
+              <h3 className="md:pb-2 pb-1">Card number</h3>
+              <div className="font-bold md:py-3 py-2.5 md:px-6 px-3 border border-[#16151533] w-[60%] text-left ">
                 <h3>1234 5678 9012 3245</h3>
               </div>
             </div>
 
             <div className="flex justify-between items-center gap-5 md:gap-7 pt-4 md:pt-9">
               <div className="w-1/2">
-                <h3 className="pb-2">Valid through</h3>
-                <div className="font-bold py-3 px-6 border border-[#16151533]   text-left ">
+                <h3 className="md:pb-2 pb-1">Valid through</h3>
+                <div className="font-bold md:py-3 py-2.5 md:px-6 px-3 border border-[#16151533]   text-left ">
                   <h3>06/29</h3>
                 </div>
               </div>
 
               <div className="w-1/2">
-                <h3 className="pb-2">CVC</h3>
-                <div className="font-bold py-3 px-6 border border-[#16151533]   text-left ">
+                <h3 className="md:pb-2 pb-1">CVC</h3>
+                <div className="font-bold md:py-3 py-2.5 md:px-6 px-3 border border-[#16151533]   text-left ">
                   <h3>220</h3>
                 </div>
               </div>
@@ -185,7 +185,7 @@ const CheckoutPage = () => {
       </div>
 
       <div className="items-center justify-center flex font-clash md:pb-12 pb-6">
-        <div className="text-white px-8 py-3 bg-black">
+        <div className="text-white md:px-8 px-4 md:py-3 py-1.5 bg-black">
           <h3>Pay $6000</h3>
         </div>
       </div>
