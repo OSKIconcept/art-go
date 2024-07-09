@@ -16,7 +16,9 @@ const Header = () => {
   return (
     <div className="bg-white text-[#161515A3]">
       <div className="flex justify-between items-center mx-auto max-w-[1511px] px-[20px] md:pt-14 pt-10 pb-6 md:pb-10">
-        <img className="lg:w-[105px] md:w-[66px] w-[33px] " src={logo} />
+        <Link to="/">
+          <img className="lg:w-[105px] md:w-[66px] w-[33px] " src={logo} />
+        </Link>
         <div className="flex md:gap-[80px] lg:gap-[100px] gap-[20px]  ">
           <div className=" md:gap-6 gap-3 text-2xl hidden md:flex ">
             <p>Home</p>
