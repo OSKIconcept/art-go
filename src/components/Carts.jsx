@@ -26,12 +26,12 @@ const Carts = () => {
         </Link>
       </div>
 
-      <div className="flex justify-start md:gap-8 gap-2 md:pb-[100px] pb-[32px] border-b border-[#16151566] ">
+      <div className="flex justify-start lg:gap-6 md:gap-2 gap-2 md:pb-[100px] pb-[32px] border-b border-[#16151566] w-[90%]  ">
         <h3>
           <IoIosCheckbox className="" />
         </h3>
         <img
-          className="md:w-[440px] lg:w-[540px] w-[170px] h-[170px] md:h-[440px] lg:h-[540px] object-contain "
+          className="md:w-[380px] lg:w-[540px] w-[170px] h-[170px] md:h-[380px] lg:h-[540px] object-contain "
           src={people}
         />
         <div className="flex md:gap-4 gap-0.5 justify-start items-start">
@@ -84,12 +84,12 @@ const Carts = () => {
         </div>
       </div>
 
-      <div className="flex justify- md:gap-8 gap-2 md:pb-[100px] pb-[32px]   pt-[32px] md:pt-[100px]">
+      <div className="flex justify- lg:gap-6 md:gap-2 gap-2 md:pb-[100px] pb-[32px]   pt-[32px] md:pt-[100px] w-[90%]">
         <h3>
           <IoIosCheckbox className="" />
         </h3>
         <img
-          className="md:w-[440px] lg:w-[540px] w-[170px] h-[170px] md:h-[440px] lg:h-[540px] object-contain "
+          className="md:w-[380px] lg:w-[540px] w-[170px] h-[170px] md:h-[380px] lg:h-[540px] object-contain "
           src={sun}
         />
         <div className="flex md:gap-4 gap-0.5 justify-start items-start">
@@ -139,12 +139,12 @@ const Carts = () => {
         </div>
       </div>
 
-      <div className="flex items-center justify-start md:pb-10 pb-3.5">
+      <div className="flex items-center justify-start md:pb-10 pb-3.5 w-[90%]">
         <div className="text-[40px] text-black text-center font-bold md:px-[55px] px-[20px] md:py-4 py-1.5 border-[#161515A3] border ">
           <h3 className="font-clash">Total: $ 6000</h3>
         </div>
 
-        <div className="text-[40px] text-white text-center font-bold md:px-[56px] px-[21px] md:py-[17px] py-[7px] bg-black ">
+        <div className="text-[40px] text-white text-center font-bold md:px-[56px] px-[21px] md:py-[17px] py-[7px] bg-black hover:bg-gray-800 ">
           <h3 className="font-clash">
             <Link to="/checkout"> Proceed to checkout (2)</Link>
           </h3>
@@ -154,7 +154,7 @@ const Carts = () => {
         Delivery fee included
       </p>
 
-      <div className="flex items-center justify-start gap-1 md:pt-[60px] pt-[8px] md:pb-[90px] pb-[35px]  border-b border-[#16151566]">
+      <div className="flex items-center justify-start gap-1 md:pt-[60px] pt-[8px] md:pb-[90px] pb-[35px]  border-b border-[#16151566] w-[90%]">
         <h3>
           {" "}
           <IoIosCheckbox className="text" />
@@ -162,21 +162,21 @@ const Carts = () => {
         <p className="lg:text-[32px] text-[12px] md:text-[24px]">Select all</p>
       </div>
 
-      <div className="md:py-[60px] py-[30px] md:gap-[30px] gap-[10px] flex flex-col ">
+      <div className="md:py-[60px] py-[30px] md:gap-[30px] gap-[10px] flex flex-col w-[90%]">
         <h3 className=" font-bold font-clash">More from Digital Art</h3>
         <div className="flex items-center justify-start md:gap-2 gap-1">
           <div className=" flex flex-col md:gap-6 gap-3">
             <img className="w-[88%]" src={bottle} />
-            <div className="flex md:gap-[100px] gap-[40px] justify-start items-center md:pl-6 pl-3">
+            <div className="flex md:gap-[30px] gap-[40px] justify-start items-center ">
               <div className="flex gap-1.2 justify-center items-center">
-                <p className="font-bold lg:text-[32px] md:text-[24px] text-[8px]">
+                <p className="font-bold lg:text-[32px] md:text-[24px] sm:text-[14px] text-[8px]">
                   Magic
                 </p>
                 <h3>
                   {" "}
                   <PiLineVertical className="" />
                 </h3>
-                <p className="lg:text-[32px] text-[8px] md:text-[24px]">
+                <p className="lg:text-[32px] text-[8px] md:text-[24px] sm:text-[14px]">
                   $3000
                 </p>
               </div>
@@ -194,16 +194,16 @@ const Carts = () => {
           </div>
           <div className=" flex flex-col md:gap-6 gap-3">
             <img className="w-[88%]" src={butterfly} />
-            <div className="flex md:gap-[100px] gap-[40px] justify-start items-center md:pl-6 pl-3">
+            <div className="flex md:gap-[30px] gap-[40px] justify-start items-center">
               <div className="flex gap-1.2 justify-center items-center">
-                <p className="font-bold lg:text-[32px] md:text-[24px] text-[8px]">
+                <p className="font-bold lg:text-[32px] md:text-[24px] text-[8px] sm:text-[14px]">
                   Magic
                 </p>
                 <h3>
                   {" "}
                   <PiLineVertical className="" />
                 </h3>
-                <p className="lg:text-[32px] text-[8px] md:text-[24px]">
+                <p className="lg:text-[32px] text-[8px] md:text-[24px] sm:text-[14px]">
                   $3000
                 </p>
               </div>

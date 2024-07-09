@@ -171,7 +171,7 @@ const Category = () => {
             </h2>
           </div>
 
-          <div className="">
+          <div className="pb-3 md:pb-6">
             {" "}
             <p className="text-center min-w-[20%]">
               Need help? Contact our{" "}
@@ -179,6 +179,12 @@ const Category = () => {
               you choose the best style to represent your vision, brand, or
               story.{" "}
             </p>
+          </div>
+
+          <div className="text-[40px] text-white text-center font-bold md:px-[56px] px-[21px] md:py-[17px] py-[7px] bg-black hover:bg-gray-800 ">
+            <h3 className="font-clash">
+              <Link to="/cart">Go to cart</Link>
+            </h3>
           </div>
         </div>
       </div>

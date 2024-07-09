@@ -87,16 +87,27 @@ const Art = () => {
     <div className="flex gap-12 flex-wrap w-full ">
       {data.map((art, i) => (
         <div className="flex-1 basis-1/3 flex flex-col gap-6" key={i}>
-          <img className="w-[98%]" src={art.image} />
-          <div className="flex  justify-around items-center px-4">
+          <img className="w-full h-full object-cover" src={art.image} />
+          <div className="flex  justify-between items-center md:px-4 px-2">
             <div className="flex justify-center items-center">
-              <h3 className="font-bold">{art.name}</h3>
-              <PiLineVertical className="md:text-[30px] text-[15px]" />
-              <h3 className="pl-[-10px]"> {art.amount}</h3>
+              <h3 className="font-bold text-[13px] sm:text-[15px] md:text-[20px] lg:text-[32px]">
+                {art.name}
+              </h3>
+              <PiLineVertical className="md:text-[20px] lg:text-[30px] text-[15px]" />
+              <h3 className="pl-[-20px] text-[13px] sm:text-[15px] md:text-[20px] lg:text-[32px]">
+                {" "}
+                {art.amount}
+              </h3>
             </div>
             <div className="flex md:gap-3 gap-2 ">
-              <img className="md:w-[24px]  w-[12px] " src={art.like} />{" "}
-              <img className="md:w-[24px] w-[12px] " src={art.chart} />
+              <img
+                className="md:w-[20px] lg:w-[32px]  w-[12px] "
+                src={art.like}
+              />{" "}
+              <img
+                className="md:w-[20px] lg:w-[32px]   w-[12px] "
+                src={art.chart}
+              />
             </div>
           </div>
         </div>

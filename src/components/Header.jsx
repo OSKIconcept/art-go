@@ -33,7 +33,7 @@ const Header = () => {
               className="cursor-pointer block md:hidden text-[24px] md:text-[32px] lg:text-[40px]"
               onClick={() => setNav((open) => !open)}
             >
-              {nav ? <AiOutlineClose /> : <IoMenu />}
+              {nav ? "" : <IoMenu />}
             </div>
 
             <div
@@ -43,7 +43,18 @@ const Header = () => {
                   : " fixed left-[-100%] ease-in-out duration-500 h-screen top-0    bg-white w-[60%] px-10  py-12 flex flex-col gap-10 z-10 isolate  md:hidden"
               }
             >
-              <img className="lg:w-[105px] md:w-[66px] w-[33px] " src={logo} />
+              <div className="flex justify-between items-center">
+                <img
+                  className="lg:w-[105px] md:w-[66px] w-[33px] "
+                  src={logo}
+                />
+                <div
+                  className="cursor-pointer block md:hidden text-[24px] md:text-[32px] lg:text-[40px]"
+                  onClick={() => setNav((open) => !open)}
+                >
+                  {nav ? <AiOutlineClose /> : <IoMenu />}
+                </div>
+              </div>
               <div className="font-clash gap-5">
                 <p className="text-[16px] hover:text-[18px] cursor-pointer">
                   Home
@@ -69,7 +80,7 @@ const Header = () => {
             <IoPersonSharp className="text-[24px] md:text-[32px] lg:text-[40px]" />
             <div className="flex after:content-['(2)'] after:text-[16px] after:ml-0.5">
               <Link to="/cart">
-                <FaShoppingCart className="hover:text-red-600 text-[24px] md:text-[32px] lg:text-[40px]" />
+                <FaShoppingCart className="hover:text-gray-800 text-[24px] md:text-[32px] lg:text-[40px]" />
               </Link>
             </div>
           </div>
