@@ -31,7 +31,7 @@ const Carts = () => {
           <IoIosCheckbox className="" />
         </h3>
         <img
-          className="md:w-[320px] lg:w-[540px] w-[170px] h-[170px] md:h-[320px] lg:h-[540px] object-contain "
+          className="md:w-[320px] lg:w-[540px] w-[160px] h-[160px] md:h-[320px] lg:h-[540px] object-contain "
           src={people}
         />
         <div className="flex md:gap-4 gap-0.5 justify-start items-start">
@@ -89,7 +89,7 @@ const Carts = () => {
           <IoIosCheckbox className="" />
         </h3>
         <img
-          className="md:w-[320px] lg:w-[540px] w-[170px] h-[170px] md:h-[320px] lg:h-[540px] object-contain "
+          className="md:w-[320px] lg:w-[540px] w-[160px] h-[160px] md:h-[320px] lg:h-[540px] object-contain "
           src={sun}
         />
         <div className="flex md:gap-4 gap-0.5 justify-start items-start">
@@ -141,11 +141,13 @@ const Carts = () => {
 
       <div className="flex items-center justify-start md:pb-10 pb-3.5 w-[90%]">
         <div className="text-[40px] text-black text-center font-bold md:px-[55px] px-[20px] md:py-4 py-1.5 border-[#161515A3] border ">
-          <h3 className="font-clash">Total: $ 6000</h3>
+          <h3 className="font-clash text-[9px] sm:text-[15px] md:text-[22px] lg:text-[40px]">
+            Total: $ 6000
+          </h3>
         </div>
 
         <div className="text-[40px] text-white text-center font-bold md:px-[56px] px-[21px] md:py-[17px] py-[7px] bg-black hover:bg-gray-800 ">
-          <h3 className="font-clash">
+          <h3 className="font-clash text-[9px] sm:text-[15px] md:text-[22px] lg:text-[40px]">
             <Link to="/checkout"> Proceed to checkout (2)</Link>
           </h3>
         </div>
@@ -167,7 +169,7 @@ const Carts = () => {
         <div className="flex items-center justify-start md:gap-2 gap-1">
           <div className=" flex flex-col md:gap-6 gap-3">
             <img className="w-[88%]" src={bottle} />
-            <div className="flex md:gap-[30px] gap-[40px] justify-start items-center overflow-x-hidden  ">
+            <div className="flex   justify-between items-center w-[85%]   ">
               <div className="flex gap-1.2 justify-center items-center">
                 <p className="font-bold lg:text-[32px] md:text-[18px] sm:text-[14px] text-[8px]">
                   Magic
@@ -194,7 +196,7 @@ const Carts = () => {
           </div>
           <div className=" flex flex-col md:gap-6 gap-3">
             <img className="w-[88%]" src={butterfly} />
-            <div className="flex md:gap-[30px] gap-[40px] justify-start items-center">
+            <div className="flex w-[85%] justify-between items-center">
               <div className="flex gap-1.2 justify-center items-center">
                 <p className="font-bold lg:text-[32px] md:text-[18px] text-[8px] sm:text-[14px]">
                   Magic

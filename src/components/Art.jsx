@@ -84,11 +84,11 @@ const data = [
 
 const Art = () => {
   return (
-    <div className="flex gap-12 flex-wrap w-full ">
+    <div className="flex md:gap-12 gap-7 flex-wrap w-full ">
       {data.map((art, i) => (
-        <div className="flex-1 basis-1/3 flex flex-col gap-6" key={i}>
+        <div className="flex-1 basis-1/3 flex flex-col md:gap-6 gap-3" key={i}>
           <img className="w-full h-full object-cover" src={art.image} />
-          <div className="flex  justify-between items-center md:px-4 px-2">
+          <div className="flex  justify-between items-center md:px-4 ">
             <div className="flex justify-center items-center">
               <h3 className="font-bold text-[13px] sm:text-[15px] md:text-[20px] lg:text-[32px]">
                 {art.name}

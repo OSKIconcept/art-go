@@ -41,7 +41,7 @@ const CheckoutPage = () => {
 
       <div className="mx-auto max-w-[1511px] px-[20px]">
         <div className=" pb-3 pt-8 ">
-          <div className="flex md:gap-[250px] gap-[100px] items-center justify-start pb-6">
+          <div className="flex md:gap-[250px] gap-[80px] items-center justify-start pb-6">
             <h2 className="font-bold font-clash ">Shipping details</h2>
             <div className="flex gap-2 border justify-center items-center md:p-3 p-2  ">
               <p>Change address</p>
