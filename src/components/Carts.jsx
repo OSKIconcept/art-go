@@ -31,7 +31,7 @@ const Carts = () => {
           <IoIosCheckbox className="" />
         </h3>
         <img
-          className="md:w-[380px] lg:w-[540px] w-[170px] h-[170px] md:h-[380px] lg:h-[540px] object-contain "
+          className="md:w-[320px] lg:w-[540px] w-[170px] h-[170px] md:h-[320px] lg:h-[540px] object-contain "
           src={people}
         />
         <div className="flex md:gap-4 gap-0.5 justify-start items-start">
@@ -89,7 +89,7 @@ const Carts = () => {
           <IoIosCheckbox className="" />
         </h3>
         <img
-          className="md:w-[380px] lg:w-[540px] w-[170px] h-[170px] md:h-[380px] lg:h-[540px] object-contain "
+          className="md:w-[320px] lg:w-[540px] w-[170px] h-[170px] md:h-[320px] lg:h-[540px] object-contain "
           src={sun}
         />
         <div className="flex md:gap-4 gap-0.5 justify-start items-start">
@@ -154,7 +154,7 @@ const Carts = () => {
         Delivery fee included
       </p>
 
-      <div className="flex items-center justify-start gap-1 md:pt-[60px] pt-[8px] md:pb-[90px] pb-[35px]  border-b border-[#16151566] w-[90%]">
+      <div className="flex items-center justify-start gap-1 md:pt-[40px] pt-[8px] md:pb-[70px] pb-[35px]  border-b border-[#16151566] w-[90%]">
         <h3>
           {" "}
           <IoIosCheckbox className="text" />
