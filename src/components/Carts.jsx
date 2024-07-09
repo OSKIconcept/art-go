@@ -5,7 +5,7 @@ import butterfly from "@/assets/butterfly.png";
 import cartt from "@/assets/cartt.png";
 import heartt from "@/assets/heartt.png";
 
-//icons
+//icons used
 import { IoIosCheckbox } from "react-icons/io";
 import { BiSolidRightArrow } from "react-icons/bi";
 import { IoMdArrowDropdown } from "react-icons/io";
