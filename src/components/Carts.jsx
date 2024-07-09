@@ -141,13 +141,13 @@ const Carts = () => {
 
       <div className="flex items-center justify-start md:pb-10 pb-3.5 w-[90%]">
         <div className="text-[40px] text-black text-center font-bold md:px-[55px] px-[20px] md:py-4 py-1.5 border-[#161515A3] border ">
-          <h3 className="font-clash text-[9px] sm:text-[15px] md:text-[22px] lg:text-[40px]">
+          <h3 className="font-clash text-[10px] sm:text-[15px] md:text-[22px] lg:text-[40px]">
             Total: $ 6000
           </h3>
         </div>
 
         <div className="text-[40px] text-white text-center font-bold md:px-[56px] px-[21px] md:py-[17px] py-[7px] bg-black hover:bg-gray-800 ">
-          <h3 className="font-clash text-[9px] sm:text-[15px] md:text-[22px] lg:text-[40px]">
+          <h3 className="font-clash text-[10px] sm:text-[15px] md:text-[22px] lg:text-[40px]">
             <Link to="/checkout"> Proceed to checkout (2)</Link>
           </h3>
         </div>

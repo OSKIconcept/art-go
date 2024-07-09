@@ -3,7 +3,7 @@ import NotFoundPage from "./pages/NotFoundPage";
 import ProductPage from "./pages/ProductPage";
 import CartPage from "./pages/CartPage";
 import CheckoutPage from "./pages/CheckoutPage";
-import RootLayout from "./components/RootLayout";
+import RootLayout from "./components/layout/RootLayout";
 
 const routes = createBrowserRouter([
   {
