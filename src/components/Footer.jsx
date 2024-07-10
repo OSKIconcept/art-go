@@ -6,19 +6,19 @@ import tictok from "@/assets/tictok.png";
 const Footer = () => {
   return (
     <div className="bg-[#4A4641] text-[#FFFFFFCC]">
-      <div className="flex flex-col  items-start mx-auto max-w-[1511px] max-h-[887px]  ">
+      <div className="flex flex-col  items-start mx-auto  max-h-[887px]  ">
         <div className="flex w-full justify-between items-center border-b border-[#FFFFFF66]">
-          <div className=" font-clash text-[48px] flex flex-col border-r border-[#FFFFFF66]  w-[70%] md:gap-8 gap-6">
-            <p className="font-bold text-[12px] md:text-[24px] lg:text-[48px] border-b border-[#FFFFFF66] md:pt-10 pt-5 px-[20px]   ">
+          <div className=" font-clash text-[48px] flex flex-col border-r border-[#FFFFFF66]  w-[70%] md:gap-8 gap-6 ">
+            <p className="font-bold text-[12px] md:text-[24px] lg:text-[48px] border-b border-[#FFFFFF66] md:pt-10 pt-5 px-[20px]  lg:px-[220px]  ">
               Contact
             </p>
-            <p className="font-bold text-[12px] md:text-[24px] lg:text-[48px] border-b border-[#FFFFFF66] px-[20px] ">
+            <p className="font-bold text-[12px] md:text-[24px] lg:text-[48px] border-b border-[#FFFFFF66] px-[20px] lg:px-[220px] ">
               Services
             </p>
-            <p className="font-bold text-[12px] md:text-[24px] lg:text-[48px] border-b border-[#FFFFFF66] px-[20px] ">
+            <p className="font-bold text-[12px] md:text-[24px] lg:text-[48px] border-b border-[#FFFFFF66] px-[20px] lg:px-[220px] ">
               Careers
             </p>
-            <p className="font-bold text-[12px] md:text-[24px] lg:text-[48px]  px-[20px] ">
+            <p className="font-bold text-[12px] md:text-[24px] lg:text-[48px]  px-[20px] lg:px-[220px] ">
               Sustainability
             </p>
           </div>
@@ -43,7 +43,7 @@ const Footer = () => {
         </div>
 
         <div className="flex w-full justify-center items-center">
-          <p className="font-bold text-[12px] md:text-[24px] lg:text-[48px]  md:pt-10 pt-5 px-[20px] w-[70%] border-r border-[#FFFFFF66]">
+          <p className="font-bold text-[12px] md:text-[24px] lg:text-[48px]  md:pt-10 pt-5 px-[20px] lg:px-[220px] w-[70%] border-r border-[#FFFFFF66]">
             Blog
           </p>
 
@@ -53,7 +53,7 @@ const Footer = () => {
         </div>
 
         <div className="flex w-full justify-between items-center border-t border-[#FFFFFF66]">
-          <p className="font-bold text-[12px] md:text-[24px] lg:text-[48px]  md:py-8 py-3 px-[20px] w-[70%] border-r  border-[#FFFFFF66]  ">
+          <p className="font-bold text-[12px] md:text-[24px] lg:text-[48px]  md:py-8 py-3 px-[20px] lg:px-[220px] w-[70%] border-r  border-[#FFFFFF66]  ">
             <img className="lg:w-[105px] md:w-[66px] w-[28px]" src={lo} />
           </p>
 
