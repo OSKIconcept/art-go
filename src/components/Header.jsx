@@ -15,7 +15,7 @@ const Header = () => {
 
   return (
     <div className="bg-white text-[#161515A3]">
-      <div className="flex justify-between items-center mx-auto max-w-[1511px] px-[20px] md:pt-14 pt-10 pb-6 md:pb-10">
+      <div className="flex justify-between items-center mx-auto max-w-[1511px] px-[20px] sm:pt-14 pt-10 pb-6 md:pb-10">
         <Link to="/">
           <img className="lg:w-[105px] md:w-[66px] w-[33px] " src={logo} />
         </Link>

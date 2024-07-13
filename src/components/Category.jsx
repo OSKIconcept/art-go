@@ -7,7 +7,7 @@ import { FaPlus } from "react-icons/fa6";
 import { IoIosCheckbox } from "react-icons/io";
 import { MdCheckBoxOutlineBlank } from "react-icons/md";
 import { MdOutlineDoubleArrow } from "react-icons/md";
-import { BiSolidRightArrow } from "react-icons/bi";
+
 import { Link } from "react-router-dom";
 
 const Category = () => {
@@ -144,32 +144,6 @@ const Category = () => {
           </div>
 
           <Art />
-
-          <div className="flex md:gap-12 gap-8 justify-center items-center md:py-12 py-6">
-            <div className="flex md:gap-5 gap-2 justify-center items-center">
-              <div className="md:px-6 px-4 py-1 md:py-2 border rounded-md text-black border-black">
-                <p>1</p>
-              </div>
-              <div className="md:px-6 px-4 py-1 md:py-2 border rounded-md text-[#16151566]">
-                <p>2</p>
-              </div>
-              <div className="md:px-6 px-4 py-1 md:py-2 border rounded-md text-[#16151566]">
-                <p>3</p>
-              </div>
-              <div className="md:px-6 px-4 py-1 md:py-2 border rounded-md text-[#16151566]">
-                <p>4</p>
-              </div>
-              <div className="md:px-6 px-4 py-1 md:py-2 border rounded-md text-[#16151566]">
-                <p>5</p>
-              </div>
-            </div>
-
-            <h2>
-              <Link to="/cart">
-                <BiSolidRightArrow />
-              </Link>
-            </h2>
-          </div>
 
           <div className="pb-3 md:pb-6">
             {" "}
