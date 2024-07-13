@@ -5,12 +5,8 @@ import sun from "@/assets/sun.png";
 import { IoMdArrowDropdown } from "react-icons/io";
 import { MdCancel } from "react-icons/md";
 import { IoIosCheckbox } from "react-icons/io";
-import { useCartContext } from "./context";
 
 ///keys
-const KEY = "01c2da102abe4334b2a19ce5ca68b25e20240712172939613969";
-const ID = "PU1OHTCAJV4A77N";
-const ORG = "210afe4850e1499b9b958d62083e5fe4";
 
 const data = [
   {
@@ -23,35 +19,12 @@ const data = [
 ];
 
 const CartItems = () => {
-  const {
-    cart,
-    isLoading,
-    setIsloading,
-    products,
-    setProducts,
-    setCart,
-    selectedId,
-  } = useCartContext();
-
-  function handleAddItem(product) {
-    setCart((cart) => [...cart, product]); //yh
-  }
-
-  const { id } = cart;
-
-  function handleAdd() {
-    const newItems = {
-      id: selectedId,
-    };
-    handleAddItem(newItems);
-  }
-
   return (
     <div>
-      {products.map((dat, i) => (
+      {data.map((dat, i) => (
         <div
           key={i}
-          className="flex justify-start lg:gap-6 md:gap-2 gap-2 md:pb-[100px] pb-[32px] border-b border-[#16151566] w-[90%]  "
+          className="flex justify-start lg:gap-6 md:gap-2 gap-2 md:pb-[100px] pb-[32px]   "
         >
           <h3>
             <IoIosCheckbox className="" />
