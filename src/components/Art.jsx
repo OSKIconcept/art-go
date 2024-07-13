@@ -94,6 +94,7 @@ const ORG = "210afe4850e1499b9b958d62083e5fe4";
 ///pagination
 
 const Art = () => {
+  const [products, setProducts] = useState([]);
   //yh
   const [error, setError] = useState("");
   const [click, setClick] = useState(false);
@@ -103,7 +104,7 @@ const Art = () => {
   const [selectedId, setSelectedId] = useState(null);
 
   //pagination
-  const { isLoading, setIsloading, products, setProducts } = useCartContext();
+  const { isLoading, setIsloading } = useCartContext();
   useEffect(() => {
     const controller = new AbortController();
 
@@ -130,17 +131,19 @@ const Art = () => {
     }
     fetchData();
     return () => controller.abort();
-  }, [page, setIsloading, setProducts]);
+  }, [page, setIsloading]);
 
   if (isLoading) {
     return <div>is Loading...</div>;
   }
 
   ///handlings
+  function handleAddItem(item) {
+    setCart((cart) => [...cart, item]); //yh
+  }
 
   function handleSelected(id) {
     setSelectedId((selectedId) => (id === selectedId ? null : id));
-    console.log(selectedId);
   }
 
   return (
@@ -176,11 +179,9 @@ const Art = () => {
                     value={click}
                     //onClick={() => setClick((clic) => !clic)}
                   />{" "}
-                  <div
-                    className="cursor-pointer"
-                    onClick={() => setSelectedId(product.id)}
-                  >
+                  <div>
                     <img
+                      onClick={handleAddItem}
                       className="md:w-[20px] lg:w-[32px]   w-[12px] "
                       src={cartt}
                     />
@@ -217,10 +218,7 @@ const Art = () => {
           </div>
         </div>
 
-        <h2
-          className="hover:text-gray-700 cursor-pointer"
-          onClick={() => setPage(page + 1)}
-        >
+        <h2 onClick={() => setPage((c) => c++)}>
           <BiSolidRightArrow />
         </h2>
       </div>

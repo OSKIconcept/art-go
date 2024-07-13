@@ -24,7 +24,7 @@ const Carts = () => {
         </Link>
       </div>
       {/*<CartItems />*/}
-
+      <CartItems />
       <div className="flex items-center justify-start md:pb-10 pb-3.5 w-[90%]">
         <div className="text-[40px] text-black text-center font-bold md:px-[55px] px-[20px] md:py-4 py-1.5 border-[#161515A3] border ">
           <h3 className="font-clash text-[10px] sm:text-[15px] md:text-[22px] lg:text-[40px]">

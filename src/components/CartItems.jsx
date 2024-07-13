@@ -7,6 +7,11 @@ import { MdCancel } from "react-icons/md";
 import { IoIosCheckbox } from "react-icons/io";
 import { useCartContext } from "./context";
 
+///keys
+const KEY = "01c2da102abe4334b2a19ce5ca68b25e20240712172939613969";
+const ID = "PU1OHTCAJV4A77N";
+const ORG = "210afe4850e1499b9b958d62083e5fe4";
+
 const data = [
   {
     image: people,
@@ -18,8 +23,15 @@ const data = [
 ];
 
 const CartItems = () => {
-  const { cart, isLoading, setIsloading, products, setProducts } =
-    useCartContext();
+  const {
+    cart,
+    isLoading,
+    setIsloading,
+    products,
+    setProducts,
+    setCart,
+    selectedId,
+  } = useCartContext();
 
   function handleAddItem(product) {
     setCart((cart) => [...cart, product]); //yh
@@ -32,39 +44,6 @@ const CartItems = () => {
       id: selectedId,
     };
     handleAddItem(newItems);
-  }
-
-  useEffect(() => {
-    const controller = new AbortController();
-
-    async function fetchData() {
-      try {
-        setIsloading(true);
-        const res = await fetch(
-          `https://api.timbu.cloud/products/${selectedId} `,
-          {
-            signal: controller.signal,
-          }
-        );
-
-        if (!res.ok) throw new Error("details not found");
-        const data = await res.json();
-        if (data.Response === "False") throw new Error("something wrong");
-        console.log(data);
-        setProducts(data.items);
-      } catch (err) {
-        if (err.mesage !== "AbortError") {
-        }
-      } finally {
-        setIsloading(false);
-      }
-    }
-    fetchData();
-    return () => controller.abort();
-  }, [setIsloading, setProducts]);
-
-  if (isLoading) {
-    return <div>is Loading...</div>;
   }
 
   return (

@@ -5,27 +5,18 @@ const initials = {
   setIsloading: () => {},
   cart: [],
   setCart: () => {},
-  products: [],
-  setProducts: () => {},
 };
 export const CartContext = createContext(initials);
 
 export function CartContexProvider({ children }) {
   const [isLoading, setIsloading] = useState(false);
   const [cart, setCart] = useState([]);
-  const [products, setProducts] = useState([]);
-
-  if (isLoading) {
-    return <div>is Loading...</div>;
-  }
 
   const value = {
     isLoading,
     setIsloading,
     cart,
     setCart,
-    products,
-    setProducts,
   };
 
   return <CartContext.Provider value={value}>{children}</CartContext.Provider>;
