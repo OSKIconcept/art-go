@@ -200,19 +200,31 @@ const Art = () => {
         <div className="flex md:gap-5 gap-2 justify-center items-center">
           <div
             onClick={() => setPage(1)}
-            className="md:px-6 px-4 py-1 md:py-2 border rounded-md text-black border-black cursor-pointer"
+            className={
+              page === 1
+                ? "md:px-6 px-4 py-1 md:py-2 border rounded-md text-black border-black cursor-pointer"
+                : "md:px-6 px-4 py-1 md:py-2 border rounded-md text-[#16151566] cursor-pointer"
+            }
           >
             <p>1</p>
           </div>
           <div
             onClick={() => setPage(2)}
-            className="md:px-6 px-4 py-1 md:py-2 border rounded-md text-[#16151566] cursor-pointer"
+            className={
+              page === 2
+                ? "md:px-6 px-4 py-1 md:py-2 border rounded-md text-black border-black cursor-pointer"
+                : "md:px-6 px-4 py-1 md:py-2 border rounded-md text-[#16151566] cursor-pointer"
+            }
           >
             <p>2</p>
           </div>
           <div
             onClick={() => setPage(3)}
-            className="active:border md:px-6 px-4 py-1 md:py-2 border rounded-md text-[#16151566] cursor-pointer"
+            className={
+              page === 3
+                ? "md:px-6 px-4 py-1 md:py-2 border rounded-md text-black border-black cursor-pointer"
+                : "md:px-6 px-4 py-1 md:py-2 border rounded-md text-[#16151566] cursor-pointer"
+            }
           >
             <p>3</p>
           </div>
