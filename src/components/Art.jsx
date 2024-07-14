@@ -218,7 +218,13 @@ const Art = () => {
           </div>
         </div>
 
-        <h2 onClick={() => setPage((c) => c++)}>
+        <h2
+          className="cursor-pointer"
+          onClick={() => {
+            setPage((c) => c + 1);
+            if (page > 2) setPage(1);
+          }}
+        >
           <BiSolidRightArrow />
         </h2>
       </div>
