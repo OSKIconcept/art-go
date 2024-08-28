@@ -50,7 +50,7 @@ const Carts = () => {
         <div
           onClick={() => {
             clearCart();
-            toast.error("cart empty");
+            toast.error("cart is empty");
           }}
           className="text-[40px] text-black hover:text-white text-center font-bold md:px-[40px] px-[16px] md:py-[13px] py-[5px] border border-gray-800 hover:bg-gray-800 ease-in-out duration-500 cursor-pointer  "
         >

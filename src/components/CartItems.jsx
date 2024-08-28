@@ -4,6 +4,7 @@ import { MdCancel } from "react-icons/md";
 import { IoIosCheckbox } from "react-icons/io";
 import useCart from "@/context/CartContext";
 import { LuMinusCircle, LuPlusCircle } from "react-icons/lu";
+import { toast } from "sonner";
 ///keys
 
 // const data = [
@@ -103,7 +104,12 @@ const CartItems = () => {
               <h3 className="font-bold  md:pt-3 pt-0.5 ">${item.total}</h3>
             </div>
             <p className="cursor-pointer">
-              <div onClick={() => removeFromCart(item)}>
+              <div
+                onClick={() => {
+                  removeFromCart(item);
+                  toast.error("item removed to cart");
+                }}
+              >
                 <MdCancel
                   className=""
                   onClick={() => removeFromCart(item.unique_id)}
