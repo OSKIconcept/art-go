@@ -134,7 +134,7 @@ const Category = () => {
               </h3>
               <h3 className="font-bold">Digital Art</h3>
             </div>
-            <div className="flex gap-2 border justify-center items-center md:p-3 p-2 ">
+            <div className="flex cursor-pointer gap-2 border justify-center items-center md:p-3 p-2 ">
               <p>sort</p>
 
               <p>

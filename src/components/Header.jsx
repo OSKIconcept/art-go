@@ -7,11 +7,11 @@ import { Link } from "react-router-dom";
 import { IoMenu } from "react-icons/io5";
 import { AiOutlineClose } from "react-icons/ai";
 import { useState } from "react";
-
-<AiOutlineClose />;
+import useCart from "@/context/CartContext";
 
 const Header = () => {
   const [nav, setNav] = useState(false);
+  const { cart } = useCart();
 
   return (
     <div className="bg-white text-[#161515A3]">
@@ -78,10 +78,11 @@ const Header = () => {
             </div>
 
             <IoPersonSharp className="text-[24px] md:text-[32px] lg:text-[40px]" />
-            <div className="flex after:content-['(2)'] after:text-[16px] after:ml-0.5">
+            <div className="flex justify-center items-center">
               <Link to="/cart">
                 <FaShoppingCart className="hover:text-gray-800 text-[24px] md:text-[32px] lg:text-[40px]" />
               </Link>
+              <p className="text-[16px] md:text-[22px]">({cart.length})</p>
             </div>
           </div>
         </div>
@@ -91,3 +92,5 @@ const Header = () => {
 };
 
 export default Header;
+
+// className="flex after:content-['(2)'] after:text-[16px] after:ml-0.5"

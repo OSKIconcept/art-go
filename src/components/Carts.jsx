@@ -4,7 +4,7 @@ import cartt from "@/assets/cartt.png";
 import heartt from "@/assets/heartt.png";
 
 //icons used
-import { IoIosCheckbox } from "react-icons/io";
+// import { IoIosCheckbox } from "react-icons/io";
 import { BiSolidRightArrow } from "react-icons/bi";
 
 import { PiLineVertical } from "react-icons/pi";
@@ -12,7 +12,11 @@ import { Link } from "react-router-dom";
 import { FaAngleDoubleLeft } from "react-icons/fa";
 import CartItems from "./CartItems";
 
+import useCart from "@/context/CartContext";
+import { toast } from "sonner";
+
 const Carts = () => {
+  const { cart, clearCart, total } = useCart();
   return (
     <div className="mx-auto flex-col justify-center items-center md:pt-[80px] pt-[28px] max-w-[1511px] px-[20px]  ">
       <div className="text-[#161515A3] flex gap-[4px] md:gap-[16px] items-center md:pb-8 pb-4 justify-start ">
@@ -28,13 +32,13 @@ const Carts = () => {
       <div className="flex items-center justify-start md:pb-10 pb-3.5 w-[90%]">
         <div className="text-[40px] text-black text-center font-bold md:px-[55px] px-[20px] md:py-4 py-1.5 border-[#161515A3] border ">
           <h3 className="font-clash text-[10px] sm:text-[15px] md:text-[22px] lg:text-[40px]">
-            Total: $ 6000
+            Total: $ {total}
           </h3>
         </div>
 
-        <div className="text-[40px] text-white text-center font-bold md:px-[56px] px-[21px] md:py-[17px] py-[7px] bg-black hover:bg-gray-800 ">
+        <div className="text-[40px] text-white text-center font-bold md:px-[56px] px-[21px] md:py-[17px] py-[7px] bg-black hover:bg-gray-800 cursor-pointer ">
           <h3 className="font-clash text-[10px] sm:text-[15px] md:text-[22px] lg:text-[40px]">
-            <Link to="/checkout"> Proceed to checkout (2)</Link>
+            <Link to="/checkout"> Proceed to checkout ({cart.length})</Link>
           </h3>
         </div>
       </div>
@@ -42,12 +46,16 @@ const Carts = () => {
         Delivery fee included
       </p>
 
-      <div className="flex items-center justify-start gap-1 md:pt-[40px] pt-[8px] md:pb-[70px] pb-[35px]  border-b border-[#16151566] w-[90%]">
-        <h3>
-          {" "}
-          <IoIosCheckbox className="text" />
-        </h3>
-        <p className="lg:text-[32px] text-[12px] md:text-[24px]">Select all</p>
+      <div className="flex pt-3 md:pt-6">
+        <div
+          onClick={() => {
+            clearCart();
+            toast.error("cart empty");
+          }}
+          className="text-[40px] text-black hover:text-white text-center font-bold md:px-[40px] px-[16px] md:py-[13px] py-[5px] border border-gray-800 hover:bg-gray-800 ease-in-out duration-500 cursor-pointer  "
+        >
+          <p className="font-clash ">Clear cart</p>
+        </div>
       </div>
 
       <div className="md:py-[60px] py-[30px] md:gap-[30px] gap-[10px] flex flex-col w-[90%]">

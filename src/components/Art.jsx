@@ -1,24 +1,26 @@
-import people from "@/assets/people.png";
-import heart from "@/assets/heart.png";
-import heartt from "@/assets/heartt.png";
-import cart from "@/assets/cart.png";
-import cartt from "@/assets/cartt.png";
+/*import people from "@/assets/people.png";
+
 import blue from "@/assets/blue.png";
 import sun from "@/assets/sun.png";
 import animal from "@/assets/animal.png";
 import princess from "@/assets/princess.png";
 import painting from "@/assets/painting.png";
 import bottle from "@/assets/bottle.png";
-import butterfly from "@/assets/butterfly.png";
+import butterfly from "@/assets/butterfly.png"; */
 
 //pagination
 
 //icon
+//import heart from "@/assets/heart.png";
+//import heartt from "@/assets/heartt.png";
+//import cart from "@/assets/cart.png";
+import { IoIosHeart } from "react-icons/io";
 import { PiLineVertical } from "react-icons/pi";
 import { useEffect, useState } from "react";
 import { BiSolidRightArrow } from "react-icons/bi";
-import { useCartContext } from "./context";
-
+import { MdShoppingCart } from "react-icons/md";
+import useCart from "@/context/CartContext";
+import { toast } from "sonner";
 ///data
 
 /*const data = [
@@ -94,17 +96,21 @@ const ORG = "210afe4850e1499b9b958d62083e5fe4";
 ///pagination
 
 const Art = () => {
+  const { addToCart, cart, removeFromCart } = useCart();
+
   const [products, setProducts] = useState([]);
   //yh
-  const [error, setError] = useState("");
-  const [click, setClick] = useState(false);
+  //const [error, setError] = useState("");
+  //const [click, setClick] = useState(false);
   const [page, setPage] = useState(1);
-  const { cart, setCart } = useCartContext();
-  const [num, setNum] = useState(0);
-  const [selectedId, setSelectedId] = useState(null);
+
+  // const [selectedId, setSelectedId] = useState(null);
+  //const [num, setNum] = useState(0);
+
+  const [isLoading, setIsloading] = useState(false);
 
   //pagination
-  const { isLoading, setIsloading } = useCartContext();
+
   useEffect(() => {
     const controller = new AbortController();
 
@@ -123,7 +129,7 @@ const Art = () => {
         setProducts(data.items);
       } catch (err) {
         if (err.mesage !== "AbortError") {
-          setError(err.message);
+          //setError(err.message);
         }
       } finally {
         setIsloading(false);
@@ -137,13 +143,42 @@ const Art = () => {
     return <div>is Loading...</div>;
   }
 
-  ///handlings
-  function handleAddItem(item) {
-    setCart((cart) => [...cart, item]); //yh
-  }
+  // ///handlings
+  // function handleSelected(id) {
+  //   setSelectedId((selectedId) => (id === selectedId ? null : id));
+  //   console.log(id);
+  // }
 
-  function handleSelected(id) {
-    setSelectedId((selectedId) => (id === selectedId ? null : id));
+  //usecart
+
+  // const handleAdd = () => {
+  //   const item = { name: products.name };
+  //   console.log(item);
+  //   addToCart(item);
+  // };
+
+  // function handleCart(item) {
+  //   // console.log(item);
+  //   setIsInCart(true);
+
+  //   if (isInCart) {
+  //     addToCart(item);
+  //   } else {
+  //     setIsInCart(false);
+  //     removeFromCart(item);
+  //   }
+  // }
+
+  function handleCart(item) {
+    const isItemInCart = cart.some((cartItem) => cartItem.id === item.id);
+
+    if (!isItemInCart) {
+      addToCart(item);
+      toast.success("item added to cart");
+    } else {
+      removeFromCart(item);
+      toast.error("item removed to cart");
+    }
   }
 
   return (
@@ -152,7 +187,7 @@ const Art = () => {
         {products && products.length > 0 ? (
           products.map((product) => (
             <div
-              onClick={() => handleSelected(product.unique_id)}
+              // onClick={() => handleSelected(product.unique_id)}
               className="flex-1 basis-1/3 flex flex-col md:gap-6 gap-3"
               key={product.id}
             >
@@ -173,17 +208,17 @@ const Art = () => {
                   </h3>
                 </div>
                 <div className="flex md:gap-3 gap-2 ">
-                  <img
-                    className="md:w-[20px] lg:w-[32px]  w-[12px] "
-                    src={click ? heart : heartt}
-                    value={click}
-                    //onClick={() => setClick((clic) => !clic)}
-                  />{" "}
                   <div>
-                    <img
-                      onClick={handleAddItem}
-                      className="md:w-[20px] lg:w-[32px]   w-[12px] "
-                      src={cartt}
+                    <IoIosHeart className="md:w-[20px] lg:w-[32px]  w-[12px] " />
+                  </div>
+
+                  <div
+                    className="hover:bg-red cursor-pointer"
+                    onClick={() => handleCart(product)}
+                  >
+                    <MdShoppingCart
+                      className={`md:w-[20px] lg:w-[32px]   w-[12px] hover:scale-110 hover:text-black 
+                      }`}
                     />
                   </div>
                 </div>
